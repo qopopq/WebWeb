@@ -2,7 +2,6 @@
 using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.WebHost.UseUrls("http://localhost:5000"); // 포트 5000 고정
 
 var app = builder.Build();
 
