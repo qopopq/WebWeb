@@ -4,8 +4,7 @@ WORKDIR /app
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 COPY . .
-WORKDIR /src/WebApplication1
-RUN dotnet publish -c Release -o /app
+RUN dotnet publish WebApplication1.csproj -c Release -o /app
 
 FROM base AS final
 WORKDIR /app
