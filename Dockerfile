@@ -1,5 +1,6 @@
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
+ENV ASPNETCORE_URLS=http://+:$PORT
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
@@ -9,4 +10,4 @@ RUN dotnet publish WebApplication1.csproj -c Release -o /app
 FROM base AS final
 WORKDIR /app
 COPY --from=build /app .
-ENTRYPOINT ["dotnet", "WebApplication1.dll", "--urls", "http://0.0.0.0:10000"]
+ENTRYPOINT ["dotnet", "WebApplication1.dll"]
