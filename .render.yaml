@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: comment-board
+    env: docker
+    plan: free
