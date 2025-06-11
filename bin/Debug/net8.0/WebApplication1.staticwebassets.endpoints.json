@@ -3,6 +3,252 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
+      "Route": "NewFolder/KakaoTalk_20250611_213408609.cop0qj1zpe.jpg",
+      "AssetFile": "NewFolder/KakaoTalk_20250611_213408609.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "332876"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/Nf3p3D4TQp82lCMe04eXWPhrdFfUrwvPdBa3sj6QTY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 12:37:34 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cop0qj1zpe"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/Nf3p3D4TQp82lCMe04eXWPhrdFfUrwvPdBa3sj6QTY="
+        },
+        {
+          "Name": "label",
+          "Value": "NewFolder/KakaoTalk_20250611_213408609.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "NewFolder/KakaoTalk_20250611_213408609.jpg",
+      "AssetFile": "NewFolder/KakaoTalk_20250611_213408609.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "332876"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/Nf3p3D4TQp82lCMe04eXWPhrdFfUrwvPdBa3sj6QTY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 12:37:34 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/Nf3p3D4TQp82lCMe04eXWPhrdFfUrwvPdBa3sj6QTY="
+        }
+      ]
+    },
+    {
+      "Route": "NewFolder/KakaoTalk_20250611_213408609_01.2uzz4kn9f8.jpg",
+      "AssetFile": "NewFolder/KakaoTalk_20250611_213408609_01.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "201265"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KqQeTpRsmJhh0tFDxkaCSyxdJ2qKXyuEOUuVEN3/4sY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 12:37:34 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2uzz4kn9f8"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KqQeTpRsmJhh0tFDxkaCSyxdJ2qKXyuEOUuVEN3/4sY="
+        },
+        {
+          "Name": "label",
+          "Value": "NewFolder/KakaoTalk_20250611_213408609_01.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "NewFolder/KakaoTalk_20250611_213408609_01.jpg",
+      "AssetFile": "NewFolder/KakaoTalk_20250611_213408609_01.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "201265"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KqQeTpRsmJhh0tFDxkaCSyxdJ2qKXyuEOUuVEN3/4sY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 12:37:34 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KqQeTpRsmJhh0tFDxkaCSyxdJ2qKXyuEOUuVEN3/4sY="
+        }
+      ]
+    },
+    {
+      "Route": "NewFolder/KakaoTalk_20250611_213408609_02.f38dfuq92n.jpg",
+      "AssetFile": "NewFolder/KakaoTalk_20250611_213408609_02.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "269355"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xQ4RANeRYuT+uklgYl94H5me54+qBe8F48HgqNWZJTg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 12:37:34 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f38dfuq92n"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xQ4RANeRYuT+uklgYl94H5me54+qBe8F48HgqNWZJTg="
+        },
+        {
+          "Name": "label",
+          "Value": "NewFolder/KakaoTalk_20250611_213408609_02.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "NewFolder/KakaoTalk_20250611_213408609_02.jpg",
+      "AssetFile": "NewFolder/KakaoTalk_20250611_213408609_02.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "269355"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xQ4RANeRYuT+uklgYl94H5me54+qBe8F48HgqNWZJTg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 12:37:34 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xQ4RANeRYuT+uklgYl94H5me54+qBe8F48HgqNWZJTg="
+        }
+      ]
+    },
+    {
       "Route": "WebApplication1.psty8vjwab.styles.css",
       "AssetFile": "WebApplication1.styles.css",
       "Selectors": [],

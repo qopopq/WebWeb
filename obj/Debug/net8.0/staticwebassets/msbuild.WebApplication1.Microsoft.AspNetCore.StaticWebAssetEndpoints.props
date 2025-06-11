@@ -720,6 +720,42 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1117"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 11:16:39 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebApplication1/NewFolder/KakaoTalk_20250611_213408609.cop0qj1zpe.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NewFolder\KakaoTalk_20250611_213408609.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cop0qj1zpe"},{"Name":"integrity","Value":"sha256-/Nf3p3D4TQp82lCMe04eXWPhrdFfUrwvPdBa3sj6QTY="},{"Name":"label","Value":"_content/WebApplication1/NewFolder/KakaoTalk_20250611_213408609.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"332876"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022/Nf3p3D4TQp82lCMe04eXWPhrdFfUrwvPdBa3sj6QTY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 11 Jun 2025 12:37:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebApplication1/NewFolder/KakaoTalk_20250611_213408609.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NewFolder\KakaoTalk_20250611_213408609.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-/Nf3p3D4TQp82lCMe04eXWPhrdFfUrwvPdBa3sj6QTY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"332876"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022/Nf3p3D4TQp82lCMe04eXWPhrdFfUrwvPdBa3sj6QTY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 11 Jun 2025 12:37:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebApplication1/NewFolder/KakaoTalk_20250611_213408609_01.2uzz4kn9f8.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NewFolder\KakaoTalk_20250611_213408609_01.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2uzz4kn9f8"},{"Name":"integrity","Value":"sha256-KqQeTpRsmJhh0tFDxkaCSyxdJ2qKXyuEOUuVEN3/4sY="},{"Name":"label","Value":"_content/WebApplication1/NewFolder/KakaoTalk_20250611_213408609_01.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"201265"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022KqQeTpRsmJhh0tFDxkaCSyxdJ2qKXyuEOUuVEN3/4sY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 11 Jun 2025 12:37:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebApplication1/NewFolder/KakaoTalk_20250611_213408609_01.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NewFolder\KakaoTalk_20250611_213408609_01.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-KqQeTpRsmJhh0tFDxkaCSyxdJ2qKXyuEOUuVEN3/4sY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"201265"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022KqQeTpRsmJhh0tFDxkaCSyxdJ2qKXyuEOUuVEN3/4sY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 11 Jun 2025 12:37:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebApplication1/NewFolder/KakaoTalk_20250611_213408609_02.f38dfuq92n.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NewFolder\KakaoTalk_20250611_213408609_02.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"f38dfuq92n"},{"Name":"integrity","Value":"sha256-xQ4RANeRYuT\u002BuklgYl94H5me54\u002BqBe8F48HgqNWZJTg="},{"Name":"label","Value":"_content/WebApplication1/NewFolder/KakaoTalk_20250611_213408609_02.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"269355"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022xQ4RANeRYuT\u002BuklgYl94H5me54\u002BqBe8F48HgqNWZJTg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 11 Jun 2025 12:37:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebApplication1/NewFolder/KakaoTalk_20250611_213408609_02.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NewFolder\KakaoTalk_20250611_213408609_02.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-xQ4RANeRYuT\u002BuklgYl94H5me54\u002BqBe8F48HgqNWZJTg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"269355"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022xQ4RANeRYuT\u002BuklgYl94H5me54\u002BqBe8F48HgqNWZJTg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 11 Jun 2025 12:37:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WebApplication1/WebApplication1.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\WebApplication1.psty8vjwab.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
