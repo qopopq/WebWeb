@@ -20,104 +20,124 @@ if (File.Exists(filePath))
 
 app.MapGet("/", async context =>
 {
-    string html = @"
-<!DOCTYPE html>
+    string html = @"<!DOCTYPE html>
 <html lang='ko'>
 <head>
     <meta charset='UTF-8'>
-    <title>작은 마음, 큰 기적</title>
+    <title>루체 길드 출석 용병 시스템</title>
     <style>
+        :root {
+            --primary: #5d71ff;
+            --accent: #ff8cab;
+            --bg: #f7f8ff;
+            --card: #ffffff;
+            --text: #333333;
+        }
+        * { box-sizing: border-box; }
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #fef8f5;
-            color: #333;
+            font-family: 'Pretendard', 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
         }
         header {
-            background-color: #f27272;
-            padding: 20px;
+            padding: 2.5rem 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
             color: white;
             text-align: center;
         }
+        h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; }
+        h2 { color: var(--primary); margin-top: 2.5rem; font-size: 1.5rem; }
         .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px #ddd;
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 2rem 1.25rem 4rem;
         }
-        .gallery img {
-            width: 100%;
-            max-height: 250px;
-            object-fit: contain;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            background-color: #eee;
+        section {
+            background: var(--card);
+            padding: 1.5rem 1.25rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
         }
-        h2 {
-            color: #d9534f;
-        }
-        form {
-            margin-top: 20px;
+        ul { padding-left: 1.25rem; margin: 0; }
+        li { margin-bottom: 0.5rem; }
+        li strong { color: var(--accent); }
+        .nickname { color: var(--primary); font-weight: 600; }
+        .comments form {
             display: flex;
-            gap: 10px;
+            gap: 0.5rem;
+            margin-top: 1rem;
         }
-        input[type='text'] {
+        .comments input {
             flex: 1;
-            padding: 10px;
-            font-size: 16px;
+            border: 1px solid #ddd;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            font-size: 1rem;
         }
-        button {
-            padding: 10px 20px;
-            background-color: #f27272;
-            color: white;
+        .comments button {
             border: none;
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
             cursor: pointer;
-            font-weight: bold;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 20px;
-        }
-        li {
-            background: #fcebea;
-            margin-bottom: 8px;
-            padding: 10px;
-            border-radius: 5px;
+        .comments ul { margin-top: 1rem; list-style: none; padding: 0; }
+        .comments li {
+            background: var(--bg);
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-bottom: 0.5rem;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>작은 마음, 큰 기적</h1>
-        <p>이 아이가 배부르다는 느낌을 알까요?</p>
+        <h1>루체 길드</h1>
+        <p>출석 용병 시스템 안내</p>
     </header>
-
-    <div class='container'>
-        <div class='gallery'>
-            <img src='/NewFolder/KakaoTalk_20250611_213408609.jpg' alt='아이 사진1'>
-            <img src='/NewFolder/KakaoTalk_20250611_213408609_01.jpg' alt='아이 사진2'>
-            <img src='/NewFolder/KakaoTalk_20250611_213408609_02.jpg' alt='아이 사진3'>
-        </div>
-
-        <h2>마음을 나눠주세요</h2>
-        <form id='commentForm'>
-            <input type='text' id='commentInput' placeholder='따뜻한 말을 남겨주세요' />
-            <button type='submit'>마음 남기기</button>
-        </form>
-        <ul id='commentList'></ul>
-    </div>
-
+    <main class='container'>
+        <section class='rules'>
+            <h2>출석 용병 조건</h2>
+            <ul>
+                <li><strong>5일 출석</strong> → 43깜엽 지급</li>
+                <li><strong>연속 7일 출석</strong> → 깜주 지급<br><small>(단, 중간에 하루라도 빠지면 43깜엽으로 대체)</small></li>
+                <li>보상을 받은 후 출석 일수는 초기화되며 다음 출석부터 1일로 다시 시작됩니다.</li>
+            </ul>
+        </section>
+        <section class='people'>
+            <h2>보상 지급 담당</h2>
+            <ul>
+                <li>깜엽 지급 : <span class='nickname'>쇄</span>, <span class='nickname'>오픈채팅봇</span></li>
+                <li>깜주 지급 : <span class='nickname'>내</span></li>
+            </ul>
+        </section>
+        <section class='notes'>
+            <h2>알림</h2>
+            <p>엽서 누락은 절대 없으나, 현실 일정으로 지급이 다소 지연될 수 있습니다. 재촉은 삼가 바랍니다.</p>
+            <p>길드 건물이 완공되기 전까지는 위 조건이 유지되며, 추후 보상 체계 변경 시 사전 공지하겠습니다.</p>
+            <p>꾸준한 출석에 진심으로 감사드리며, 보상 지급과 관련해 오해가 없으시길 바랍니다!</p>
+        </section>
+        <section class='comments'>
+            <h2>길드 게시판</h2>
+            <form id='commentForm'>
+                <input type='text' id='commentInput' placeholder='길드원에게 한 마디...' autocomplete='off' />
+                <button type='submit'>등록</button>
+            </form>
+            <ul id='commentList'></ul>
+        </section>
+    </main>
     <script>
         async function loadComments() {
             const res = await fetch('/comments');
             const data = await res.json();
             const list = document.getElementById('commentList');
             list.innerHTML = '';
-            data.forEach(c => {
+            data.slice().reverse().forEach(c => {
                 const li = document.createElement('li');
                 li.textContent = c;
                 list.appendChild(li);
@@ -127,7 +147,7 @@ app.MapGet("/", async context =>
         document.getElementById('commentForm').addEventListener('submit', async (e) => {
             e.preventDefault();
             const input = document.getElementById('commentInput');
-            if (input.value.trim() === '') return;
+            if (!input.value.trim()) return;
             await fetch('/comment', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -138,11 +158,11 @@ app.MapGet("/", async context =>
         });
 
         loadComments();
-        setInterval(loadComments, 3000);
+        setInterval(loadComments, 5000);
     </script>
 </body>
 </html>";
-    context.Response.ContentType = "text/html";
+    context.Response.ContentType = "text/html; charset=utf-8";
     await context.Response.WriteAsync(html);
 });
 

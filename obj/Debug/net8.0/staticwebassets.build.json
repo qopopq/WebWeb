@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xmac69HuV0kYg9i27msO/VxdSqHMOheYVCh3xWD9/ps=",
+  "Hash": "rp+P7/aWCvmyuov+8brh2hDR8Plt/kGu1QzvSJOIC/o=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -1319,12 +1319,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\NewFolder\\KakaoTalk_20250611_213408609.jpg",
+      "Identity": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\NewFolder\\KakaoTalk_20250615_135247733.png",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
-      "RelativePath": "NewFolder/KakaoTalk_20250611_213408609#[.{fingerprint}]?.jpg",
+      "RelativePath": "NewFolder/KakaoTalk_20250615_135247733#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1333,53 +1333,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "cop0qj1zpe",
-      "Integrity": "/Nf3p3D4TQp82lCMe04eXWPhrdFfUrwvPdBa3sj6QTY=",
-      "CopyToOutputDirectory": "Always",
+      "Fingerprint": "fe9hmg5vos",
+      "Integrity": "KZD41nwvOqPDeqhidUtXtlrS+aJ6peysiypF399frSk=",
+      "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\NewFolder\\KakaoTalk_20250611_213408609.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\NewFolder\\KakaoTalk_20250611_213408609_01.jpg",
-      "SourceId": "WebApplication1",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\",
-      "BasePath": "_content/WebApplication1",
-      "RelativePath": "NewFolder/KakaoTalk_20250611_213408609_01#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "2uzz4kn9f8",
-      "Integrity": "KqQeTpRsmJhh0tFDxkaCSyxdJ2qKXyuEOUuVEN3/4sY=",
-      "CopyToOutputDirectory": "Always",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\NewFolder\\KakaoTalk_20250611_213408609_01.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\NewFolder\\KakaoTalk_20250611_213408609_02.jpg",
-      "SourceId": "WebApplication1",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\",
-      "BasePath": "_content/WebApplication1",
-      "RelativePath": "NewFolder/KakaoTalk_20250611_213408609_02#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "f38dfuq92n",
-      "Integrity": "xQ4RANeRYuT+uklgYl94H5me54+qBe8F48HgqNWZJTg=",
-      "CopyToOutputDirectory": "Always",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\NewFolder\\KakaoTalk_20250611_213408609_02.jpg"
+      "OriginalItemSpec": "wwwroot\\NewFolder\\KakaoTalk_20250615_135247733.png"
     }
   ],
   "Endpoints": [
@@ -6304,8 +6262,8 @@
       ]
     },
     {
-      "Route": "NewFolder/KakaoTalk_20250611_213408609.cop0qj1zpe.jpg",
-      "AssetFile": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\NewFolder\\KakaoTalk_20250611_213408609.jpg",
+      "Route": "NewFolder/KakaoTalk_20250615_135247733.fe9hmg5vos.png",
+      "AssetFile": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\NewFolder\\KakaoTalk_20250615_135247733.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6314,19 +6272,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "332876"
+          "Value": "121336"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/jpeg"
+          "Value": "image/png"
         },
         {
           "Name": "ETag",
-          "Value": "\"/Nf3p3D4TQp82lCMe04eXWPhrdFfUrwvPdBa3sj6QTY=\""
+          "Value": "\"KZD41nwvOqPDeqhidUtXtlrS+aJ6peysiypF399frSk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 11 Jun 2025 12:37:34 GMT"
+          "Value": "Sun, 15 Jun 2025 04:53:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6336,21 +6294,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cop0qj1zpe"
+          "Value": "fe9hmg5vos"
         },
         {
           "Name": "label",
-          "Value": "NewFolder/KakaoTalk_20250611_213408609.jpg"
+          "Value": "NewFolder/KakaoTalk_20250615_135247733.png"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/Nf3p3D4TQp82lCMe04eXWPhrdFfUrwvPdBa3sj6QTY="
+          "Value": "sha256-KZD41nwvOqPDeqhidUtXtlrS+aJ6peysiypF399frSk="
         }
       ]
     },
     {
-      "Route": "NewFolder/KakaoTalk_20250611_213408609.jpg",
-      "AssetFile": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\NewFolder\\KakaoTalk_20250611_213408609.jpg",
+      "Route": "NewFolder/KakaoTalk_20250615_135247733.png",
+      "AssetFile": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\NewFolder\\KakaoTalk_20250615_135247733.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6359,19 +6317,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "332876"
+          "Value": "121336"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/jpeg"
+          "Value": "image/png"
         },
         {
           "Name": "ETag",
-          "Value": "\"/Nf3p3D4TQp82lCMe04eXWPhrdFfUrwvPdBa3sj6QTY=\""
+          "Value": "\"KZD41nwvOqPDeqhidUtXtlrS+aJ6peysiypF399frSk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 11 Jun 2025 12:37:34 GMT"
+          "Value": "Sun, 15 Jun 2025 04:53:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6381,171 +6339,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/Nf3p3D4TQp82lCMe04eXWPhrdFfUrwvPdBa3sj6QTY="
-        }
-      ]
-    },
-    {
-      "Route": "NewFolder/KakaoTalk_20250611_213408609_01.2uzz4kn9f8.jpg",
-      "AssetFile": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\NewFolder\\KakaoTalk_20250611_213408609_01.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "201265"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KqQeTpRsmJhh0tFDxkaCSyxdJ2qKXyuEOUuVEN3/4sY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 11 Jun 2025 12:37:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "2uzz4kn9f8"
-        },
-        {
-          "Name": "label",
-          "Value": "NewFolder/KakaoTalk_20250611_213408609_01.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-KqQeTpRsmJhh0tFDxkaCSyxdJ2qKXyuEOUuVEN3/4sY="
-        }
-      ]
-    },
-    {
-      "Route": "NewFolder/KakaoTalk_20250611_213408609_01.jpg",
-      "AssetFile": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\NewFolder\\KakaoTalk_20250611_213408609_01.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "201265"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KqQeTpRsmJhh0tFDxkaCSyxdJ2qKXyuEOUuVEN3/4sY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 11 Jun 2025 12:37:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-KqQeTpRsmJhh0tFDxkaCSyxdJ2qKXyuEOUuVEN3/4sY="
-        }
-      ]
-    },
-    {
-      "Route": "NewFolder/KakaoTalk_20250611_213408609_02.f38dfuq92n.jpg",
-      "AssetFile": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\NewFolder\\KakaoTalk_20250611_213408609_02.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "269355"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xQ4RANeRYuT+uklgYl94H5me54+qBe8F48HgqNWZJTg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 11 Jun 2025 12:37:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "f38dfuq92n"
-        },
-        {
-          "Name": "label",
-          "Value": "NewFolder/KakaoTalk_20250611_213408609_02.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-xQ4RANeRYuT+uklgYl94H5me54+qBe8F48HgqNWZJTg="
-        }
-      ]
-    },
-    {
-      "Route": "NewFolder/KakaoTalk_20250611_213408609_02.jpg",
-      "AssetFile": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\NewFolder\\KakaoTalk_20250611_213408609_02.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "269355"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xQ4RANeRYuT+uklgYl94H5me54+qBe8F48HgqNWZJTg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 11 Jun 2025 12:37:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-xQ4RANeRYuT+uklgYl94H5me54+qBe8F48HgqNWZJTg="
+          "Value": "sha256-KZD41nwvOqPDeqhidUtXtlrS+aJ6peysiypF399frSk="
         }
       ]
     },

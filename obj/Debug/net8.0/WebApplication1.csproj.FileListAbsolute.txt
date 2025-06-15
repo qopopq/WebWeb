@@ -67,6 +67,3 @@ C:\Users\User\Desktop\WebTest\WebApplication1\obj\Debug\net8.0\refint\WebApplica
 C:\Users\User\Desktop\WebTest\WebApplication1\obj\Debug\net8.0\WebApplication1.pdb
 C:\Users\User\Desktop\WebTest\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\User\Desktop\WebTest\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
-C:\Users\User\Desktop\WebTest\WebApplication1\bin\Debug\net8.0\wwwroot\NewFolder\KakaoTalk_20250611_213408609.jpg
-C:\Users\User\Desktop\WebTest\WebApplication1\bin\Debug\net8.0\wwwroot\NewFolder\KakaoTalk_20250611_213408609_01.jpg
-C:\Users\User\Desktop\WebTest\WebApplication1\bin\Debug\net8.0\wwwroot\NewFolder\KakaoTalk_20250611_213408609_02.jpg
