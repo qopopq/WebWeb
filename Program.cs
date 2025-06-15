@@ -106,7 +106,13 @@ app.MapGet("/", async context =>
             <ul>
                 <li><strong>5일 출석</strong> → 43깜엽 지급</li>
                 <li><strong>연속 7일 출석</strong> → 깜주 지급<br><small>(단, 중간에 하루라도 빠지면 43깜엽으로 대체)</small></li>
-                <li>보상을 받은 후 출석 일수는 초기화되며 다음 출석부터 1일로 다시 시작됩니다.<br><small>(출석체크 후 반드시 길챗에 카운트 1..2..3...7 이렇게 남겨주시면 됩니다.)</small></li>
+                <li>
+                  보상을 받은 후 출석 일수는 초기화되며 다음 출석부터 1일로 다시 시작됩니다.<br>
+                  <small>
+                    (출석체크 후 반드시 길챗에 카운트 1..2..3...7 이렇게 남겨주시면 됩니다.<br>
+                    최종 출첵 완료 시 <strong>7_(본계 닉)</strong> 또는 <strong>5_(본계 닉)</strong> 형태로 남겨주세요.)
+                  </small>
+                </li>
             </ul>
         </section>
         <section class='people'>
