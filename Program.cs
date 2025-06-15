@@ -24,7 +24,7 @@ app.MapGet("/", async context =>
 <html lang='ko'>
 <head>
     <meta charset='UTF-8'>
-    <title>루체 길드 출석 용병 시스템</title>
+    <title>우리 길드 출석 용병 시스템</title>
     <style>
         :root {
             --primary: #5d71ff;
@@ -97,7 +97,7 @@ app.MapGet("/", async context =>
 </head>
 <body>
     <header>
-        <h1>루체 길드</h1>
+        <h1>우리 길드</h1>
         <p>출석 용병 시스템 안내</p>
     </header>
     <main class='container'>
@@ -105,7 +105,7 @@ app.MapGet("/", async context =>
             <h2>출석 용병 조건</h2>
             <ul>
                 <li><strong>5일 출석</strong> → 43깜엽 지급</li>
-                <li><strong>연속 7일 출석</strong> → 깜주 지급<br><small>(단, 중간에 하루라도 빠지면 43깜엽으로 대체)</small></li>
+                <li><strong>연속 7일 출석</strong> → 깜주 지급<br><small>(단, 중간에 하루라도 빠지면 43깜엽으로 대체(중요))</small></li>
                 <li>보상을 받은 후 출석 일수는 초기화되며 다음 출석부터 1일로 다시 시작됩니다.</li>
             </ul>
         </section>
@@ -120,7 +120,7 @@ app.MapGet("/", async context =>
             <h2>알림</h2>
             <p>엽서 누락은 절대 없으나, 현실 일정으로 지급이 다소 지연될 수 있습니다. 재촉은 삼가 바랍니다.</p>
             <p>길드 건물이 완공되기 전까지는 위 조건이 유지되며, 추후 보상 체계 변경 시 사전 공지하겠습니다.</p>
-            <p>꾸준한 출석에 진심으로 감사드리며, 보상 지급과 관련해 오해가 없으시길 바랍니다!</p>
+            <p>꾸준한 출석에 진심으로 감사드리며, 보상 지급과 관련해 착오가 없으시길 바랍니다!</p>
         </section>
         <section class='comments'>
             <h2>길드 게시판</h2>
