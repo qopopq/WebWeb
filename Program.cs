@@ -113,7 +113,7 @@ app.MapGet("/", async context =>
             <h2>보상 지급 담당</h2>
             <ul>
                 <li>깜엽 지급 : <span class='nickname'>쇄</span>, <span class='nickname'>오픈채팅봇</span></li>
-                <li>깜주 지급 : <span class='nickname'>내</span></li>
+                <li>주엽 지급 : <span class='nickname'>내</span></li>
             </ul>
         </section>
         <section class='notes'>
