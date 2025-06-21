@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>잔해 길드 | 승인 시스템</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0e1018;
+            --primary: #aabaff;
+            --accent: #ff91a4;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text: #f0f0f0;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Gowun Batang', serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--primary);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        input, button {
+            padding: 0.75rem;
+            margin-top: 1rem;
+            width: 100%;
+            font-size: 1rem;
+            border-radius: 0.5rem;
+            border: none;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: var(--primary);
+            color: white;
+            cursor: pointer;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            width: 280px;
+            backdrop-filter: blur(8px);
+            transition: transform 0.3s;
+        }
+
+            .card:hover {
+                transform: translateY(-8px);
+            }
+
+        .card-title {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .card-desc {
+            font-size: 1rem;
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        .top-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="mainPage">
+            <h1 id="welcomeText">잔해 길드</h1>
+            <p>카드 교환 길드 잔해에 오신 것을 환영합니다</p>
+            <div class="card-container">
+                <div class="card" onclick="location.href='/card.html'" style="cursor:pointer;">
+                    <div class="card-title">카드 등록</div>
+                    <div class="card-desc">길드원 여러분의 카드를 등록하고, 교환을 위한 준비를 해주세요.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">교환 요청</div>
+                    <div class="card-desc">교환을 원하는 카드를 선택하고 요청을 보내보세요. 관리자가 확인 후 승인합니다.</div>
+                </div>
+                <div class="card" onclick="goToRequestPage()" style="cursor: pointer;">
+                    <div class="card-title">승인 요청</div>
+                    <div class="card-desc">승인 요청을 위해 ID와 비밀번호를 입력하세요.</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="requestPage" class="hidden">
+            <h1>승인 요청</h1>
+            <p>ID와 비밀번호를 입력하고 승인을 요청하세요.</p>
+
+            <div id="loginBox">
+                <input type="text" id="userId" placeholder="ID를 입력하세요" />
+                <input type="password" id="userPw" placeholder="비밀번호 입력" />
+                <input type="button" value="확인" onclick="login()" />
+                <p id="loginResult"></p>
+            </div>
+
+            <div id="pendingBox" class="hidden">
+                <h2>⏳ 승인 대기 중</h2>
+                <p>관리자의 승인을 기다리고 있습니다...</p>
+            </div>
+
+            <div id="approvedBox" class="hidden">
+                <h2>✅ 승인 완료</h2>
+                <p>이제 카드 등록이 가능합니다!</p>
+            </div>
+
+            <div id="rejectedBox" class="hidden">
+                <h2>❌ 거부됨</h2>
+                <p>요청이 거부되었습니다. 다시 시도해주세요.</p>
+            </div>
+
+            <div id="adminBox" class="hidden">
+                <h2>🛠 관리자 모드</h2>
+                <button onclick="loadPending()">승인 요청 새로고침</button>
+                <h3>대기 중인 사용자</h3>
+                <ul id="pendingList"></ul>
+                <h3>승인된 사용자</h3>
+                <ul id="approvedList"></ul>
+            </div>
+
+            <div class="top-buttons">
+                <button onclick="logout()">로그아웃</button>
+                <button onclick="goToMain()">처음으로</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentId = localStorage.getItem('id') || '';
+        let currentRole = localStorage.getItem('role') || '';
+        let pendingRetryTimer = null;
+
+        function updateMainPageUI() {
+            const userId = localStorage.getItem("id");
+            if (!userId) return;
+            document.getElementById("welcomeText").innerText = `${userId}님, 환영합니다`;
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedId = localStorage.getItem('id');
+            const savedRole = localStorage.getItem('role');
+
+            if (savedId) {
+                currentId = savedId;
+                currentRole = savedRole;
+                updateMainPageUI();
+
+                if (window.location.href.includes("request") && savedRole === 'admin') {
+                    goToRequestPage();
+                    showSection('adminBox');
+                    loadPending();
+                }
+            }
+        });
+
+        function goToMain() {
+            document.getElementById('requestPage').classList.add('hidden');
+            document.getElementById('mainPage').classList.remove('hidden');
+            updateMainPageUI();
+        }
+
+        async function goToRequestPage() {
+            document.getElementById('mainPage').classList.add('hidden');
+            document.getElementById('requestPage').classList.remove('hidden');
+
+            const id = localStorage.getItem('id');
+            const role = localStorage.getItem('role');
+
+            if (!id || !role) {
+                showSection('loginBox');
+                return;
+            }
+
+            if (role === 'admin') {
+                showSection('adminBox');
+                loadPending();
+                return;
+            }
+
+            try {
+                const res = await fetch("/check-auth");
+                if (res.ok) {
+                    const data = await res.json();
+                    if (data.role === "user") {
+                        showSection('approvedBox');
+                    } else {
+                        showSection('loginBox');
+                    }
+                } else if (res.status === 403) {
+                    showSection('pendingBox');
+                } else {
+                    showSection('loginBox');
+                }
+            } catch (err) {
+                console.error("check-auth error:", err);
+                showSection('loginBox');
+            }
+        }
+
+        function logout() {
+            localStorage.removeItem('id');
+            localStorage.removeItem('role');
+            currentId = '';
+            currentRole = '';
+            if (pendingRetryTimer) {
+                clearTimeout(pendingRetryTimer);
+                pendingRetryTimer = null;
+            }
+            document.getElementById("welcomeText").innerText = "잔해 길드";
+            showSection('loginBox');
+            document.getElementById('userId').value = '';
+            document.getElementById('userPw').value = '';
+        }
+
+        async function login(forceId = null) {
+            const id = forceId || document.getElementById('userId').value.trim();
+            const pw = document.getElementById('userPw').value.trim();
+            if (!id || !pw) return;
+
+            currentId = id;
+            localStorage.setItem('id', id);
+
+            const res = await fetch('/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id, pw })
+            });
+
+            const result = await res.text();
+
+            if (result === 'ADMIN') {
+                localStorage.setItem('role', 'admin');
+                showSection('adminBox');
+                loadPending();
+            } else if (result === 'APPROVED') {
+                localStorage.setItem('role', 'user');
+                showSection('approvedBox');
+            } else if (result === 'PENDING') {
+                localStorage.setItem('role', 'user');
+                showSection('pendingBox');
+                document.getElementById('loginResult').textContent = '';
+                pendingRetryTimer = setTimeout(() => login(id), 3000);
+            } else if (result === 'ALREADY_PENDING') {
+                showSection('pendingBox');
+                document.getElementById('loginResult').textContent = '이미 승인 요청 중입니다.';
+            } else if (result === 'REJECTED') {
+                showSection('rejectedBox');
+            } else if (result === 'DUPLICATE_ID') {
+                showSection('loginBox');
+                document.getElementById('loginResult').textContent = '이미 존재하는 ID입니다.';
+            } else {
+                document.getElementById('loginResult').textContent = '오류: ' + result;
+            }
+        }
+
+        async function loadPending() {
+            const res = await fetch('/admin/pending');
+            const data = await res.json();
+            const list = document.getElementById('pendingList');
+            list.innerHTML = '';
+            data.forEach(id => {
+                const li = document.createElement('li');
+                li.textContent = id + ' ';
+                const approveBtn = document.createElement('button');
+                approveBtn.textContent = '승인';
+                approveBtn.onclick = async () => {
+                    await fetch(`/admin/approve/${id}`, { method: 'POST' });
+                    loadPending();
+                };
+                const denyBtn = document.createElement('button');
+                denyBtn.textContent = '거부';
+                denyBtn.onclick = async () => {
+                    await fetch(`/admin/deny/${id}`, { method: 'POST' });
+                    loadPending();
+                };
+                li.appendChild(approveBtn);
+                li.appendChild(denyBtn);
+                list.appendChild(li);
+            });
+
+            const approvedRes = await fetch('/admin/approved');
+            const approvedData = await approvedRes.json();
+            const approvedList = document.getElementById('approvedList');
+            approvedList.innerHTML = '';
+            approvedData.forEach(id => {
+                const li = document.createElement('li');
+                li.textContent = id + ' ';
+                const kickBtn = document.createElement('button');
+                kickBtn.textContent = '강퇴';
+                kickBtn.onclick = async () => {
+                    await fetch(`/admin/kick/${id}`, { method: 'POST' });
+                    loadPending();
+                };
+                li.appendChild(kickBtn);
+                approvedList.appendChild(li);
+            });
+        }
+
+        function showSection(idToShow) {
+            ['loginBox', 'pendingBox', 'approvedBox', 'rejectedBox', 'adminBox'].forEach(id => {
+                document.getElementById(id).classList.add('hidden');
+            });
+            document.getElementById(idToShow).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

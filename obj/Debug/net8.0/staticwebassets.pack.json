@@ -9,12 +9,20 @@
       "PackagePath": "staticwebassets\\NewFolder\\KakaoTalk_20250615_135247733.png"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\card.html",
+      "PackagePath": "staticwebassets\\card.html"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
     },
     {
       "Id": "C:\\Users\\User\\Desktop\\WebTest\\WebApplication1\\wwwroot\\js\\site.js",

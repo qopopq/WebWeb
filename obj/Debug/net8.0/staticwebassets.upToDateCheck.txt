@@ -1,5 +1,7 @@
+wwwroot\card.html
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\index.html
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
